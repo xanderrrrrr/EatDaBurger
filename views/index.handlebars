@@ -3,6 +3,15 @@
 <h2>Burgers that are not eaten</h2>
 <ul>
   {{#each burgers}}
+    	<li>
+  		<p><span class="label">ID:</span> {{this.id}}</p>
+      <p><span class="label">Burger:</span> {{this.burger_name}}</p>
+      <p><span class="label">Devoured:</span> {{this.devoured}}</p>
+
+      <button data-id="{{this.id}}" class="delquote">Delete</button>
+
+      <a href="/{{this.id}}">Update this quote</a>
+  	</li>
 
   {{/each}}
 </ul>
