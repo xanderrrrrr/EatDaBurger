@@ -5,5 +5,7 @@
 
     <button class="delete-burger" data-id="{{this.id}}">DELETE!</button>
 
-    <a href="/{{this.id}}">Update this burger</a>
+    <button class="change-devoured" data-id="{{this.id}}" data-newdevoured="{{this.devoured}}">
+		{{#if devoured}}DEVOUR IT{{else}}Else Statement{{/if}}
+	</button>
 </li>
