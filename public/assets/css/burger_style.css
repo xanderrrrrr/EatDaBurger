@@ -1,0 +1,11 @@
+body { 
+    background-color: #fcba03;
+}
+
+.devoured { 
+    color: white;
+}
+
+.noteaten {
+    color:green;
+}
