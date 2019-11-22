@@ -28,16 +28,17 @@
     <h2>Add a burger</h2>
     <form class="create-form">
 
-      <div class="form-group">
-        <label for="burg">Burger Name:</label>
-        <input type="text" id="burg" name="name">
+      <div class="form-group col">
+        {{!-- <label for="burg">Burger Name:</label> --}}
+        <textarea id="burg" name="name" rows="2" cols="40">
+          </textarea>
       </div>
 
-      <div class="form-group">
+      {{!-- <div class="form-group">
         <label for="devoured">Is it devoured?</label><br>
         <input type="radio" name="devoured" value="1" checked> Not eaten!<br>
         <input type="radio" name="devoured" value="0"> Devoured!
-      </div>
+      </div> --}}
 
       <button class="btn btn-primary" type="submit">Add Burger</button>
     </form>

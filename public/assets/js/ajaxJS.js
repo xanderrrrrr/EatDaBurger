@@ -29,7 +29,7 @@ $(function() {
   
       var newBurger = {
         burger_name: $("#burg").val().trim(),
-        devoured: $("[name=devoured]:checked").val().trim()
+        devoured: 1
       };
       console.log("x = " + x);
   
