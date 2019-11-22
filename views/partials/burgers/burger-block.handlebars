@@ -1,15 +1,21 @@
 <div class="row">
   <div class="col-md-6">
     <li class={{#if devoured}}"devoured"{{else}}"noteaten"{{/if}}>
-      <p><span class="label">ID:</span> {{this.id}}</p>
-      <p><span class="label">Burger:</span> {{this.burger_name}}</p>
-      <p><span class="label">Devoured:</span> {{this.devoured}}</p>
+      <p><span class="label"></span>{{this.id}} {{this.burger_name}}</p>
+      {{!-- <p><span class="label">Devoured:</span> {{this.devoured}}</p> --}}
 
-      <button class="delete-burger" data-id="{{this.id}}">DELETE!</button>
-
-      <button class="change-devoured" data-id="{{this.id}}" data-newdevoured="{{this.devoured}}">
+      {{!-- <button class="change-devoured btn btn-outline-secondary" data-id="{{this.id}}"
+        data-newdevoured="{{this.devoured}}">
         {{#if devoured}}Spit it back up!{{else}}DEVOUR!!{{/if}}
-      </button>
+
+        <button class="delete-burger btn btn-outline-danger" data-id="{{this.id}}">Delete</button>
+      </button> --}}
+
+      <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-secondary change-devoured" data-id="{{this.id}}" data-newdevoured="{{this.devoured}}">{{#if devoured}}Undo{{else}}DEVOUR!!{{/if}}</button>
+        <button type="button" class="btn btn-secondary delete-burger" data-id="{{this.id}}">Delete</button>
+      </div>
+
     </li>
   </div>
 </div>

@@ -24,21 +24,22 @@
     </div>
   </div>
 
+  <div class="add-a-burger-container">
+    <h2>Add a burger</h2>
+    <form class="create-form">
 
-  <h2>Add a burger</h2>
-  <form class="create-form">
+      <div class="form-group">
+        <label for="burg">Burger Name:</label>
+        <input type="text" id="burg" name="name">
+      </div>
 
-    <div class="form-group">
-      <label for="burg">Burger Name:</label>
-      <input type="text" id="burg" name="name">
-    </div>
+      <div class="form-group">
+        <label for="devoured">Is it devoured?</label><br>
+        <input type="radio" name="devoured" value="1" checked> Not eaten!<br>
+        <input type="radio" name="devoured" value="0"> Devoured!
+      </div>
 
-    <div class="form-group">
-      <label for="devoured">Devoured?</label><br>
-      <input type="radio" name="devoured" value="1" checked> Devoured!<br>
-      <input type="radio" name="devoured" value="0"> Not eaten
-    </div>
-
-    <button type="submit">Add Burger</button>
-  </form>
+      <button class="btn btn-primary" type="submit">Add Burger</button>
+    </form>
+  </div>
 </div>

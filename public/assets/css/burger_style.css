@@ -2,12 +2,18 @@ body {
     background-color: #fcba03;
 }
 
-.devoured { 
-    color: white;
+ul {
+    list-style-type: none;
 }
 
+/* text color */
+.devoured { 
+    color: red;
+}
+ 
+/* text color */
 .noteaten {
-    color:green;
+    color:black;
 }
 
 img {
@@ -36,5 +42,9 @@ img {
 }
 
 .header1 {
+    text-align: center;
+}
+
+.add-a-burger-container {
     text-align: center;
 }
