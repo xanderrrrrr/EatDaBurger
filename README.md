@@ -19,6 +19,6 @@ I coded the front-end, server, database schema, and everything in between.
 
 ## See it in action
 
-[Here!](https://blooming-scrubland-23039.herokuapp.com/)
+[Click here!](https://blooming-scrubland-23039.herokuapp.com/)
 
 ![](readme_images/readme_burger.png)
